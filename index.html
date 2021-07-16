@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+    body{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    }
+
+    body form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    body form input{
+        display: 'block';
+        /* border: none; */
+        outline: none;
+        margin: 1rem;
+        height: 1.2rem;
+    }
+
+    .form-container{
+        margin-top: 2rem;
+        width: 60%;
+        padding: 1rem;
+        text-align: center;
+        border-radius: 4px;
+        border: 1px solid #eee;
+        box-shadow: 2px 2px solid grey;
+    }
+</style>
+
+</head>
+<body>
+  <div class="form-container">
+    <form>
+        name: <input type="text">
+        password: <input type="password">
+        Country: <select name="" id="">
+            <option value="India">India</option>
+            <option value="Australia">Australia</option>
+            <option value="England">England</option>
+            <option value="UK">UK</option>
+            <option value="Sri Lanka">Sri Lanka</option>
+        </select>
+       <span>
+        Male: <input type="radio" name='gender' value="male">
+        Female: <input type="radio" name='gender' value="female">
+       </span>
+      <span>  Car <input type="checkbox">
+        Bike <input type="checkbox"></span>
+        Comment: <textarea name="comment" id="" cols="20" rows="4"></textarea>
+        <input type="submit">
+        <input type="reset">
+     </form>
+  </div>
+</body>
+</html>
