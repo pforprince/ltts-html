@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FEEDBACK SUBMISSION FORM</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src=app.js>
+     </script> 
+    
+  </head>
+  <body background="main-container">
+       <div class="main-div">
+        <form action="home.html" >
+    
+          <label> Full Name <span class="required">*</span> </label>
+          <input
+            type="text"
+            name="field1"
+            id="field1"
+            class="field-divided"
+            placeholder="Full Name"
+          />
+         
+          <label>Email <span class="required">*</span></label>
+          <input type="email" placeholder="Email"  />
+      
+          <label>Country</label>
+          <select name="field4" class="field-select">
+            <option value="select-option">Select from dropdown</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Japan">Japan</option>
+          </select>
+       
+           
+              <span class="flex-body">  
+                Car <input type="checkbox">
+                Bike <input type="checkbox"></span>
+      
+        <span class="flex-body">
+          <strong>Male:</strong> <input type="radio" name='gender' value="male">
+          <strong>Female:</strong> <input type="radio" name='gender' value="female">
+          <strong>Other:</strong> <input type="radio" name='gender' value="other">
+         </span></li>
+         
+         
+            <label>Your Message <span class="required">*</span></label>
+            <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+        
+       
+          <label>Star Rating</label>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star "></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+          <br>
+                <button type="submit" value="Submit" >Submit</button>
+         
+          <button type="reset" value="Reset" >Reset</button>
+        
+    </form>
+    
+       </div>
+   
+  </body>
+</html>
