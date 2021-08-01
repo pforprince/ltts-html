@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Data</title>
+
+
+
+<script>
+function saveValues()
+{
+  var firstname=document.getElementById("fname").value;
+  var mailName=document.getElementById("mail").value;
+  var message=document.getElementById("msg").value;
+  localStorage.setItem("firstValue",firstname);
+  localStorage.setItem("secondValue",mailName);
+  localStorage.setItem("thirdValue",message);
+  return false;
+}
+
+</script>
+</head>
+<body >
+  <div class="form-style">
+    <div class="main-div">
+     <span>Provide your information</span>
+  <br>
+  <br>
+  <br>
+     <form action="secondpage.html" >
+      <label for="field1"><span>Name <span class="required">*</span></span><input type="text" id ="fname" class="input-field" name="field1" value="" required /></label>
+      <label for="field2"><span>Email <span class="required">*</span></span><input type="text" id="mail" class="input-field" name="field2" value="" required /></label>
+      
+      <label for="field3"><span>Country</span><select name="field3" class="select-field">
+        <option value="General Question">Select country</option>
+        <option value="General Question">USA</option>
+        <option value="Advertise">India</option>
+        <option value="Partnership">Japan</option>
+      </select></label>
+      <label for="field4"><span>Message <span class="required">*</span></span><textarea cols="5" name="field4" id="msg" class="textarea-field"></textarea></label>
+      
+      <button type="submit" value="Click" onClick="saveValues();" >Submit</button>
+
+      <button type="reset" value="Reset" >Reset</button>
+
+      </form>
+   </div>
+    </div>
+    
+</body>
+</html>

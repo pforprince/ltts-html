@@ -1,0 +1,37 @@
+input, textarea, select{
+    width: 100%;
+    display: block;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    border: none;
+    height: 2rem;
+}
+
+
+textarea{
+    height: 4rem;
+}
+
+button{
+	padding: 0.5rem;
+	border-radius: 4px;
+	border: none;
+	width: 100%;
+	margin: 0.4rem;
+	cursor: pointer;
+
+}
+
+.main-div{
+	background-color: #7abaf7;
+	padding: 2rem;
+	width: 20%;
+	border-radius: 6px;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin: auto;
+}
